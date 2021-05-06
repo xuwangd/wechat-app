@@ -1,0 +1,189 @@
+/**index.wxss**/
+
+.swiper{
+  height:260rpx;
+}
+.swiper .swiper-item{
+  
+}
+.swiper .swiper-item .banner{
+  width:100%;
+  height:260rpx;
+  object-fit: cover;
+}
+/*  */
+.nav-area{
+
+}
+.nav-area .nav-list{
+  padding:0 20rpx;
+}
+.nav-area .nav-list .row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.nav-area .nav-list .row .col{
+  margin-top:30rpx;
+  text-align:center;
+  max-width:25%;
+}
+.nav-area .nav-list .row .col .icon{
+  display:inline-block;
+  width:116rpx;
+  height:116rpx;
+  margin-bottom: 10rpx;
+  object-fit:cover;
+}
+.nav-area .nav-list .row .col .txt{
+  font-size: 28rpx;
+  color:#000;
+}
+/*  */
+.today-course-area{
+  padding:0 20rpx;
+}
+.today-course-area .title{
+  margin-top:70rpx;
+  margin-bottom:30rpx;
+  font-size:32rpx;
+  color:#000;
+  font-weight:bold;
+}
+.today-course-area .row{}
+.today-course-area .row .col{}
+.today-course-area .row .col .course-name{
+  margin-top:26rpx;
+  font-size:28rpx;
+  color:#000;
+  font-weight:bold;
+}
+.today-course-area .row .col .teacher{
+  margin-top:26rpx;
+  font-size:22rpx;
+  color:#646464;
+}
+.today-course-area .row .col .schooltime{
+  margin-top:26rpx;
+  font-size:22rpx;
+  color:#646464;
+}
+.today-course-area .row .col .log{
+  margin-top:26rpx;
+  font-size:22rpx;
+  color:#646464;
+}
+.today-course-area .row .col .log .span{
+  display:inline-block;
+  margin-right:40rpx;
+}
+/*  */
+/*  */
+.hot-area{
+  padding:0 20rpx;
+}
+.hot-area .title{
+  margin-top: 30rpx;
+}
+.hot-area .title .txt{
+  margin-bottom:-15rpx;
+  font-size:30rpx;
+  color:#000;
+  font-weight:bold;
+}
+.hot-area .title .border{
+  width:194rpx;
+  height:15rpx;
+  background-image:linear-gradient(to left,#f28e26,#fd644f);
+  border-radius:15rpx;
+}
+.hot-area .hot-list{}
+.hot-area .hot-list .row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.hot-area .hot-list .col{
+  margin-top:30rpx;
+  width:340rpx;
+}
+.hot-area .hot-list .col .poster{
+  width:340rpx;
+  height:200rpx;
+  border-radius:30rpx;
+  object-fit:cover;
+}
+/*  */
+.recommend-area{
+  padding:0 20rpx;
+}
+.recommend-area .title{
+  margin-top: 30rpx;
+}
+.recommend-area .title .txt{
+  margin-bottom:-15rpx;
+  font-size:30rpx;
+  color:#000;
+  font-weight:bold;
+}
+.recommend-area .title .border{
+  width:194rpx;
+  height:15rpx;
+  background-image:linear-gradient(to left,#f28e26,#fd644f);
+  border-radius:15rpx;
+}
+.recommend-area .recommend-list .row{}
+.recommend-area .recommend-list .row .col{
+  display:flex;
+  align-items:center;
+  margin-top: 20rpx;
+}
+.recommend-area .recommend-list .row .col .vouchers{
+  width:100%;
+  height:248rpx;
+  object-fit:cover;
+}
+.recommend-area .recommend-list .row .col .poster{
+  width:170rpx;
+  height:170rpx;
+  border-radius:30rpx;
+  object-fit:cover;
+}
+.recommend-area .recommend-list .row .col .detail{
+  width:300rpx;
+  padding-left: 18rpx;
+  font-weight:bold;
+}
+.recommend-area .recommend-list .row .col .detail .trade-name{
+  font-size:26rpx;
+}
+.recommend-area .recommend-list .row .col .detail .label{
+  font-size: 26rpx;
+  color:#000;
+}
+.recommend-area .recommend-list .row .col .detail .appointment{
+  font-size: 22rpx;
+  color:#5C5C5C;
+}
+.recommend-area .recommend-list .row .col .detail .desc{
+  font-size: 22rpx;
+  color:#5C5C5C;
+}
+.recommend-area .recommend-list .row .col .right{
+  align-self:flex-end;
+  width:220rpx;
+  text-align:right;
+  font-weight:bold;
+}
+.recommend-area .recommend-list .row .col .right .buy-btn{
+  display: inline-block;
+  margin-top: 32rpx;
+  width:180rpx;
+  height:54rpx;
+  background-color:#F39A3C;
+  border-radius:15rpx;
+  font-size: 30rpx;
+  color:#FFF;
+  line-height: 54rpx;
+  text-align:center;
+}

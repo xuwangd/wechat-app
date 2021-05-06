@@ -1,0 +1,33 @@
+/* pages/open-AD/open-AD.wxss */
+.container{
+  position: relative;
+}
+
+.AD{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+.exit{
+  position:absolute;
+  right:0;
+  top:0;
+  padding:24rpx 32rpx;
+}
+.exit .span{
+  position: relative;
+}
+.exit .span .txt{
+  font-size: 28rpx;
+  color:#333;
+}
+.exit .span .border{
+  position: absolute;
+  left: 0;
+  bottom:0;
+  right: 0;
+  height: 1rpx;
+  background-color:#333;
+}
+.exit .img{}

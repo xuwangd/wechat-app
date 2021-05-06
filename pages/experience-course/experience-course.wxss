@@ -1,0 +1,93 @@
+/* pages/experience-course/experience-course.wxss */
+/*  */
+.app-container{
+  display:flex;
+  flex-direction:column;
+}
+/*  */
+.scroll-view{
+  width: 100%;
+}
+
+.scroll-view .row{
+  white-space:nowrap;
+}
+.scroll-view .row .col{
+  display:inline-block;
+  border-bottom:2rpx solid #eee;
+}
+.scroll-view .row .col .span{
+  padding:30rpx 20rpx 20rpx;
+  margin-bottom:-2rpx ;
+  font-size: 32rpx;
+  color: #000;
+}
+.scroll-view .row .col .span{
+  border-bottom: 2rpx solid transparent;
+}
+.scroll-view .row .col.active .span{
+  border-bottom-color: #F39A3C;
+  color:#F39A3C;
+}
+/*  */ 
+.main-wrapper{
+  flex:1;
+}
+.main-wrapper swiper-item{
+  width: 100%;
+  height: 100%;
+}
+/*  */
+.recommend-area{
+  padding:0 20rpx;
+}
+.recommend-area .recommend-list .row{}
+.recommend-area .recommend-list .row .col{
+  display:flex;
+  align-items:center;
+  margin-top: 20rpx;
+}
+.recommend-area .recommend-list .row .col .poster{
+  width:170rpx;
+  height:170rpx;
+  border-radius:30rpx;
+  object-fit:cover;
+}
+.recommend-area .recommend-list .row .col .detail{
+  width:300rpx;
+  padding-left: 18rpx;
+  font-weight:bold;
+}
+.recommend-area .recommend-list .row .col .detail .trade-name{
+  font-size:26rpx;
+}
+.recommend-area .recommend-list .row .col .detail .label{
+  font-size: 26rpx;
+  color:#000;
+}
+.recommend-area .recommend-list .row .col .detail .appointment{
+  font-size: 22rpx;
+  color:#5C5C5C;
+}
+.recommend-area .recommend-list .row .col .detail .desc{
+  font-size: 22rpx;
+  color:#5C5C5C;
+}
+.recommend-area .recommend-list .row .col .right{
+  align-self:flex-end;
+  width:220rpx;
+  text-align:right;
+  font-weight:bold;
+}
+.recommend-area .recommend-list .row .col .right .buy-btn{
+  display: inline-block;
+  margin-top: 32rpx;
+  width:180rpx;
+  height:54rpx;
+  background-color:#F39A3C;
+  border-radius:15rpx;
+  font-size: 30rpx;
+  color:#FFF;
+  line-height: 54rpx;
+  text-align:center;
+}

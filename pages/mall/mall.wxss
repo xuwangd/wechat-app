@@ -1,0 +1,181 @@
+/* pages/mall/mall.wxss */
+.swiper{
+  height:260rpx;
+}
+.swiper .swiper-item{
+  
+}
+.swiper .swiper-item .banner{
+  width:100%;
+  height:260rpx;
+  object-fit: cover;
+}
+/*  */
+.activity-area{}
+.activity-area .activity-list{}
+.activity-area .activity-list .row{
+  padding:0 20rpx;
+}
+.activity-area .activity-list .row .col{
+  margin-top:30rpx;
+}
+.activity-area .activity-list .row .col .vouchers{
+  width:100%;
+  height:248rpx;
+  object-fit:cover;
+}
+/*  */
+.nav-area{
+
+}
+.nav-area .nav-list{
+  padding:0 20rpx;
+}
+.nav-area .nav-list .row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.nav-area .nav-list .row .col{
+  margin-top:30rpx;
+  text-align:center;
+  max-width:25%;
+}
+.nav-area .nav-list .row .col .icon{
+  display:inline-block;
+  width:116rpx;
+  height:116rpx;
+  margin-bottom: 10rpx;
+  object-fit:cover;
+}
+.nav-area .nav-list .row .col .txt{
+  font-size: 28rpx;
+  color:#000;
+}
+/*  */
+.hot-area{
+  padding:0 20rpx;
+}
+.hot-area .title{
+  margin-top: 30rpx;
+}
+.hot-area .title .txt{
+  margin-bottom:-15rpx;
+  font-size:30rpx;
+  color:#000;
+  font-weight:bold;
+}
+.hot-area .title .border{
+  width:194rpx;
+  height:15rpx;
+  background-image:linear-gradient(to left,#f28e26,#fd644f);
+  border-radius:15rpx;
+}
+.hot-area .hot-list{}
+.hot-area .hot-list .row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.hot-area .hot-list .col{
+  margin-top:30rpx;
+  width:340rpx;
+}
+.hot-area .hot-list .col .poster{
+  width:340rpx;
+  height:200rpx;
+  border-radius:30rpx;
+  object-fit:cover;
+}
+/*  */
+.recommend-area{
+  padding:0 20rpx;
+}
+.recommend-area .title{
+  margin-top: 30rpx;
+}
+.recommend-area .title .txt{
+  margin-bottom:-15rpx;
+  font-size:30rpx;
+  color:#000;
+  font-weight:bold;
+}
+.recommend-area .title .border{
+  width:194rpx;
+  height:15rpx;
+  background-image:linear-gradient(to left,#f28e26,#fd644f);
+  border-radius:15rpx;
+}
+.recommend-area .recommend-list .row{}
+.recommend-area .recommend-list .row .col{
+  display:flex;
+  align-items:center;
+  margin-top: 30rpx;
+}
+.recommend-area .recommend-list .row .col .poster{
+  width:170rpx;
+  height:170rpx;
+  border-radius:30rpx;
+  object-fit:cover;
+}
+.recommend-area .recommend-list .row .col .detail{
+  width:300rpx;
+  padding-left: 18rpx;
+  font-weight:bold;
+}
+.recommend-area .recommend-list .row .col .detail .trade-name{
+  font-size:26rpx;
+}
+.recommend-area .recommend-list .row .col .detail .p{
+}
+.recommend-area .recommend-list .row .col .detail .p .month-sales{
+  font-size: 22rpx;
+  color:#636363;
+}
+.recommend-area .recommend-list .row .col .detail .p .count-down{
+  font-size: 22rpx;
+  color:#F20000;
+}
+.recommend-area .recommend-list .row .col .detail .pickup-location{
+  display:inline-block;
+  max-width:100%;
+  padding:2rpx;
+  font-size: 22rpx;
+  color:#CE8F00;
+  border:1rpx solid #CE8F00;
+  border-radius:10rpx;
+  box-sizing: border-box;
+}
+.recommend-area .recommend-list .row .col .right{
+  width:220rpx;
+  text-align:right;
+  font-weight:bold;
+}
+.recommend-area .recommend-list .row .col .right .price{
+  font-size: 20rpx;
+  color:#F20000;
+  
+}
+.recommend-area .recommend-list .row .col .right .price .origin-price{
+  padding:  0 4rpx;
+  font-size: 20rpx;
+  display: inline-block;
+  text-decoration:line-through
+}
+.recommend-area .recommend-list .row .col .right .price .current-price{
+  padding:  0 8rpx;
+  font-size: 24rpx;
+  display: inline-block;
+}
+.recommend-area .recommend-list .row .col .right .buy-btn{
+  display: inline-block;
+  margin-top: 32rpx;
+  width:180rpx;
+  height:54rpx;
+  background-color:#FE0000;
+  border-radius:15rpx;
+  font-size: 30rpx;
+  color:#FFF;
+  line-height: 54rpx;
+  text-align:center;
+}

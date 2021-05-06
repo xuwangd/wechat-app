@@ -1,0 +1,38 @@
+<!-- pages/course/course.wxml -->
+<view class="app-container">
+  {{ queryParams.courseName }}
+  <!--  -->
+  <mp-searchbar placeholder="课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput"></mp-searchbar>
+  <!--  -->
+  <swiper class="swiper" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}">
+    <block wx:for="{{ bannerList }}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <view>
+          <image class="banner" src="{{ item }}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <!--  -->
+  <view class="course-list">
+    <view class="row">
+      <view class="col" wx:for="{{ 10 }}">
+        <view class="col-cover">
+          <image class="image" src="../../assets/temp/goods-poster.png"></image>
+        </view>
+        <view class="col-body">
+          <view class="col-meta">
+            <view class="col-detail">
+              <view class="col-title xft-multi-ellipsis">某某课程</view>
+              <view class="col-desc clearfix">
+                <div class="span-left">100人购买</div>
+                <div class="span-right">100元</div>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

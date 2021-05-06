@@ -1,0 +1,38 @@
+<!-- pages/experience-course/experience-course.wxml -->
+<view class="app-container">
+  <!--  -->
+  <scroll-view scroll-into-view="{{ 'data-id-' + tabIndex }}" class="scroll-view" scroll-x="true">
+    <view class="row">
+      <view wx:for="{{ tabs }}" wx:key="id" id="{{ 'data-id-' + index }}" bindtap="handlerTabChange" data-index="{{ index }}" class="col {{ tabIndex === index ? 'active' : '' }}">
+        <view class="span">{{ item.label }}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <!--  -->
+  <swiper current="{{ tabIndex }}" bindchange="handlerSwiperChange" class="main-wrapper">
+    <!--  -->
+    <swiper-item wx:for="{{ tabs }}">
+      <!--  -->
+      <view class="recommend-area">
+        <view class="recommend-list">
+          <view class="row">
+            <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+              <image class="poster" src="{{ item }}"></image>
+              <view class="detail">
+                <view class="trade-name xft-multi-ellipsis--l2">
+                  三年级下学期语文课程 三年级下学期语文课程三年级下学期语文课程
+                </view>
+                <view class="label">课程标签</view>
+                <view class="appointment">已预约100</view>
+                <view class="desc xft-multi-ellipsis">线上+线下8期课程</view>
+              </view>
+              <view class="right">
+                <view class="buy-btn">预 约</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

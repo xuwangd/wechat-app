@@ -1,0 +1,31 @@
+page {
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  background: #FFFFFF;
+  width: 100%;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Medium;
+  color: #333;
+  line-height: 1.4;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+/*
+  button默认样式
+  padding margin line-height text-align min-height
+*/
+button,
+button::after,
+button.button-hover {
+  border: none!important;
+  background-color: none!important;
+}
+
+image{
+  display:block;
+}

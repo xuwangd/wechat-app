@@ -1,0 +1,118 @@
+<!-- index.wxml -->
+<view class="app-container">
+  {{ queryParams.courseName }}
+  <!--  -->
+  <mp-searchbar placeholder="课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput"></mp-searchbar>
+  <!--  -->
+  <swiper class="swiper" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}">
+    <block wx:for="{{ bannerList }}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <view>
+          <image class="banner" src="{{ item }}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--  -->
+  <view class="nav-area">
+    <view class="nav-list">
+      <view class="row">
+        <view class="col" wx:for="{{ navList }}" wx:key="*this">
+          <image class="icon" src="{{ item.icon }}"></image>
+          <view class="txt xft-multi-ellipsis">{{ item.text }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="today-course-area">
+    <view class="title">今日课程（1）</view>
+    <view class="row">
+      <view class="col">
+        <view class="course-name">数学课第一章第一节</view>
+        <view class="teacher">老师：某某老师</view>
+        <view class="schooltime">上课时间：2021年6月6日 14：00 - 14：45</view>
+        <view class="log">
+          <view class="span">总课时：20</view>
+          <view class="span">已上课时：14</view>
+          <view class="span">剩余课时：6</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <!--  -->
+  <view class="hot-area">
+    <view class="title">
+      <view class="txt">热门活动</view>
+      <view class="border"></view>
+    </view>
+    <view class="hot-list">
+      <view class="row">
+        <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+          <image class="poster" src="{{ item }}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="recommend-area">
+    <view class="title">
+      <view class="txt">推荐商品</view>
+      <view class="border"></view>
+    </view>
+    <view class="recommend-list">
+      <view class="row">
+        <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+          <image class="poster" src="{{ item }}"></image>
+          <view class="detail">
+            <view class="trade-name xft-multi-ellipsis--l2">三年级下学期语文课程 三年级下学期语文课程三年级下学期语文课程</view>
+            <view class="label">课程标签</view>
+            <view class="appointment">已预约100</view>
+            <view class="desc xft-multi-ellipsis">线上+线下8期课程</view>
+          </view>
+          <view class="right">
+            <view class="buy-btn">预 约</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="recommend-area">
+    <view class="title">
+      <view class="txt">预约课程</view>
+      <view class="border"></view>
+    </view>
+    <view class="recommend-list">
+      <view class="row">
+        <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+          <image class="poster" src="{{ item }}"></image>
+          <view class="detail">
+            <view class="trade-name xft-multi-ellipsis--l2">三年级下学期语文课程 三年级下学期语文课程三年级下学期语文课程</view>
+            <view class="label">课程标签</view>
+            <view class="appointment">已预约100</view>
+            <view class="desc xft-multi-ellipsis">线上+线下8期课程</view>
+          </view>
+          <view class="right">
+            <view class="buy-btn">预 约</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="recommend-area">
+    <view class="title">
+      <view class="txt">优惠券</view>
+      <view class="border"></view>
+    </view>
+    <view class="recommend-list">
+      <view class="row">
+        <view class="col" wx:for="{{ activityList }}" wx:key="*this">
+          <image class="vouchers" src="{{ item }}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

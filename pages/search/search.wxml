@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  {{ queryParams.courseName }}
+  <!-- -->
+  <mp-searchbar placeholder="课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput" bindselectresult="handlerSelectResult" search="{{ searchList }}"></mp-searchbar>
+  <!-- -->
+  <mp-searchbar placeholder="课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput" bindselectresult="handlerSelectResult" search="{{ searchList }}"></mp-searchbar>
+</view>

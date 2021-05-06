@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/experience-course/experience-course",
+    "pages/mall/mall",
+    "pages/open-AD/open-AD",
+    "pages/course/course",
+    "pages/home/home",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#D2D2D2",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/tabbar-icon/index.png",
+        "selectedIconPath": "/assets/tabbar-icon/index-active.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "商城",
+        "iconPath": "/assets/tabbar-icon/mall.png",
+        "selectedIconPath": "/assets/tabbar-icon/mall-active.png"
+      },
+      {
+        "pagePath": "pages/experience-course/experience-course",
+        "text": "体验课",
+        "iconPath": "/assets/tabbar-icon/promotion.png",
+        "selectedIconPath": "/assets/tabbar-icon/promotion-active.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程",
+        "iconPath": "/assets/tabbar-icon/course.png",
+        "selectedIconPath": "/assets/tabbar-icon/course-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "/assets/tabbar-icon/home.png",
+        "selectedIconPath": "/assets/tabbar-icon/home-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading",
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置效果展示"
+    }
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

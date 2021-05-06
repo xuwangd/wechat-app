@@ -1,0 +1,135 @@
+<!-- pages/mall/mall.wxml -->
+<!--  -->
+<mp-searchbar placeholder="课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput"></mp-searchbar>
+<!--  -->
+<swiper class="swiper" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}">
+  <block wx:for="{{ bannerList }}" wx:key="*this">
+    <swiper-item class="swiper-item">
+      <view>
+        <image class="banner" src="{{ item }}"></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<!--  -->
+<view class="activity-area">
+  <view class="activity-list">
+    <view class="row">
+      <view class="col" wx:for="{{ activityList }}" wx:key="*this">
+        <image class="vouchers" src="{{ item }}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="nav-area">
+  <view class="nav-list">
+    <view class="row">
+      <view class="col" wx:for="{{ navList }}" wx:key="*this">
+        <image class="icon" src="{{ item.icon }}"></image>
+        <view class="txt xft-multi-ellipsis">{{ item.text }}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="hot-area">
+  <view class="title">
+    <view class="txt">热门活动</view>
+    <view class="border"></view>
+  </view>
+  <view class="hot-list">
+    <view class="row">
+      <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+        <image class="poster" src="{{ item }}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="recommend-area">
+  <view class="title">
+    <view class="txt">推荐商品</view>
+    <view class="border"></view>
+  </view>
+  <view class="recommend-list">
+    <view class="row">
+      <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+        <image class="poster" src="{{ item }}"></image>
+        <view class="detail">
+          <view class="trade-name xft-multi-ellipsis--l2">某某商品 某某商品某某商品某某商品某某商品某某商品某某商品</view>
+          <view class="p">
+            <view class="month-sales">月售100</view>
+            <view class="count-down">剩余时间：12：55：55</view>
+          </view>
+          <view class="pickup-location xft-multi-ellipsis">自提点：红旗大街 红旗大街红旗大街</view>
+        </view>
+        <view class="right">
+          <view class="price">
+            <view class="origin-price">1000元</view>
+            <view class="current-price">600元</view>
+          </view>
+          <view class="buy-btn">立即购买</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="recommend-area">
+  <view class="title">
+    <view class="txt">秒杀商品</view>
+    <view class="border"></view>
+  </view>
+  <view class="recommend-list">
+    <view class="row">
+      <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+        <image class="poster" src="{{ item }}"></image>
+        <view class="detail">
+          <view class="trade-name xft-multi-ellipsis--l2">某某商品 某某商品某某商品某某商品某某商品某某商品某某商品</view>
+          <view class="p">
+            <view class="month-sales">月售100</view>
+            <view class="count-down">剩余时间：12：55：55</view>
+          </view>
+          <view class="pickup-location xft-multi-ellipsis">自提点：红旗大街 红旗大街红旗大街</view>
+        </view>
+        <view class="right">
+          <view class="price">
+            <view class="origin-price">1000元</view>
+            <view class="current-price">600元</view>
+          </view>
+          <view class="buy-btn">立即购买</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="recommend-area">
+  <view class="title">
+    <view class="txt">清仓商品</view>
+    <view class="border"></view>
+  </view>
+  <view class="recommend-list">
+    <view class="row">
+      <view class="col" wx:for="{{ hotList }}" wx:key="*this">
+        <image class="poster" src="{{ item }}"></image>
+        <view class="detail">
+          <view class="trade-name xft-multi-ellipsis--l2">某某商品 某某商品某某商品某某商品某某商品某某商品某某商品</view>
+          <view class="p">
+            <view class="month-sales">月售100</view>
+            <view class="count-down">剩余时间：12：55：55</view>
+          </view>
+          <view class="pickup-location xft-multi-ellipsis">自提点：红旗大街 红旗大街红旗大街</view>
+        </view>
+        <view class="right">
+          <view class="price">
+            <view class="origin-price">1000元</view>
+            <view class="current-price">600元</view>
+          </view>
+          <view class="buy-btn">立即购买</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
