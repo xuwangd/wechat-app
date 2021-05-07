@@ -1,0 +1,156 @@
+<!-- pages/course-buy/course-buy.wxml -->
+<view class="container">
+  <!--  -->
+  <view class="header">
+    <image class="poster" src="../../assets/temp/index-banner.png"></image>
+    <view class="div">
+      <view class="course-name">课程名称</view>
+      <view class="p">课程介绍</view>
+      <view class="tags">
+        <view class="tag">简单易学</view>
+        <view class="tag">循序渐进</view>
+      </view>
+      <view class="desc">
+        <view class="span1">80期课程</view>
+        <view class="span2">线下+线上课程</view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="cells">
+    <view class="cell">
+      <view class="label">课程金额</view>
+      <view class="p bold">￥1000</view>
+    </view>
+    <view class="cell">
+      <view class="label">上课方式</view>
+      <view class="p">100节线上课+100节线下课</view>
+    </view>
+    <view class="cell">
+      <view class="label">订单编号</view>
+      <view class="p">123</view>
+    </view>
+    <view class="cell">
+      <view class="label">上课地址</view>
+      <view class="p">地址</view>
+    </view>
+    <view class="cell">
+      <view class="label">优惠券</view>
+      <view class="p">无可用</view>
+      <image class="icon" src="../../assets/images/more-000.png"></image>
+    </view>
+    <view class="cell">
+      <view class="label">发票</view>
+      <view class="p bold">不开发票</view>
+      <image class="icon" src="../../assets/images/more-000.png"></image>
+    </view>
+  </view>
+  <!--  -->
+  <view class="footer">
+    <view class="price">￥1000</view>
+    <view class="btn">
+      <view class="span">提交订单</view>
+    </view>
+  </view>
+  <!--  -->
+  <mp-half-screen-dialog bindbuttontap="buttontap" show="{{ false }}" closabled="{{ false }}" maskClosable="{{ false }}">
+    <view slot="title" class="title clearfix">
+      <view class="h2">
+        <view class="span">发票</view>
+      </view>
+      <view class="close">
+        <view class="span">发票须知</view>
+        <image class="icon" src="../../assets/images/close-C8C8C8.png"></image>
+      </view>
+    </view>
+    <view slot="footer" class="footer">
+      <mp-form id="form" rules="{{ rules }}" models="{{ formData }}">
+        <!-- scroll -->
+        <scroll-view class="scroll-container" scroll-y="true">
+          <!-- 发票类型 -->
+          <view class="invoice-type">
+            <view class="h2">
+              <view class="span">发票类型</view>
+            </view>
+            <view class="radio-group clearfix">
+              <view class="radio active" wx:for="{{ invoiceTypeList }}">{{ item.text }}</view>
+            </view>
+          </view>
+          <!-- 发票抬头 -->
+          <view class="invoice-title">
+            <view class="h2">
+              <view class="span">发票抬头</view>
+            </view>
+            <view class="radio-group clearfix">
+              <view class="radio" wx:for="{{ invoiceTitleList }}">{{ item.text }}</view>
+            </view>
+            <view class="cell">
+              <view class="label">个人名称</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写“个人”或您的名称" />
+            </view>
+          </view>
+          <!-- 收票人信息 -->
+          <view class="receiver-info">
+            <view class="h2">
+              <view class="span">收票人信息</view>
+            </view>
+            <view class="cell">
+              <view class="label">收票人手机</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写手机号" />
+            </view>
+            <view class="cell">
+              <view class="label">收票人邮箱</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="用来接收电子发票邮件，可选填" />
+            </view>
+          </view>
+          <!-- 单位信息 -->
+          <view class="company-info">
+            <view class="cell">
+              <view class="label">单位名称</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写单位名称" />
+            </view>
+            <view class="cell">
+              <view class="label">纳税人识别号</view>
+              <input class="inp" placeholder-class="input-placeholder--color" placeholder="请在此填写纳税人识别号" />
+            </view>
+            <view class="cell">
+              <view class="label">注册地址</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写注册地址" />
+            </view>
+            <view class="cell">
+              <view class="label">注册电话</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写注册电话" />
+            </view>
+            <view class="cell">
+              <view class="label">开户银行</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写单位开户银行" />
+            </view>
+            <view class="cell">
+              <view class="label">银行账号</view>
+              <input class="inp" placeholder-class="input-placeholder" placeholder="请填写单位银行账号" />
+            </view>
+          </view>
+          <!-- 发票内容 -->
+          <view class="invoice-content">
+            <view class="h2">
+              <view class="span">发票内容</view>
+              <view class="tips">发票内容选项已根据税法调整，具体请以展示为准</view>
+            </view>
+            <view class="radio-group clearfix">
+              <view class="radio" wx:for="{{ invoiceContentList }}">{{ item.text }}</view>
+            </view>
+            <view class="tips">发票内容将显示详细商品名称与价格信息，发票金额为实际支付金额，不含虚拟资产、优惠等扣减金额。</view>
+          </view>
+        </scroll-view>
+        <!-- 底部按钮 -->
+        <view class="btn">
+          <view class="span">确 定</view>
+        </view>
+      </mp-form>
+    </view>
+  </mp-half-screen-dialog>
+  <!--  -->
+  <mp-dialog title="test" show="{{ false }}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>test content</view>
+  </mp-dialog>
+</view>

@@ -1,0 +1,75 @@
+<!-- pages/course-screen/course-screen.wxml -->
+<view class="container">
+  <!--  -->
+  <view class="row">
+    <view class="col clearfix">
+      <view class="label">精准搜索</view>
+      <view class="div">
+        <input class="inp" type="text" />
+      </view>
+    </view>
+    <view class="col clearfix">
+      <view class="label">时间筛选</view>
+      <view class="div">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            <view class="span">2021年</view>
+            <view class="span">11月</view>
+            <view class="span">12日</view>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="col clearfix">
+      <view class="label">分类筛选</view>
+      <view class="div">
+        <view class="radio-group clearfix">
+          <view class="radio active">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+        </view>
+      </view>
+    </view>
+    <view class="col clearfix">
+      <view class="label">属性筛选</view>
+      <view class="div">
+        <view class="radio-group clearfix">
+          <view class="radio active">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+        </view>
+      </view>
+    </view>
+    <view class="col clearfix">
+      <view class="label">类型筛选</view>
+      <view class="div">
+        <view class="radio-group clearfix">
+          <view class="radio">语文课程</view>
+          <view class="radio active">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+          <view class="radio">语文课程</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="footer">
+    <view class="btn">
+      <view class="span">确定筛选</view>
+    </view>
+  </view>
+</view>

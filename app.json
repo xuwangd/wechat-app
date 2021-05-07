@@ -1,18 +1,21 @@
 {
   "pages": [
+    "pages/course-screen/course-screen",
+    "pages/search/search",
+    "pages/course-buy/course-buy",
+    "pages/course-detail/course-detail",
     "pages/index/index",
-    "pages/experience-course/experience-course",
-    "pages/mall/mall",
-    "pages/open-AD/open-AD",
-    "pages/course/course",
     "pages/home/home",
-    "pages/search/search"
+    "pages/course/course",
+    "pages/experience-course/experience-course",
+    "pages/mall/mall"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#f28e26",
+    "navigationBarTitleText": "网校平台",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "#D2D2D2",
@@ -55,7 +58,10 @@
   "usingComponents": {
     "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
     "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading",
-    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar"
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "mp-half-screen-dialog": "/miniprogram_npm/weui-miniprogram/half-screen-dialog/half-screen-dialog",
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
+    "mp-form": "/miniprogram_npm/weui-miniprogram/form/form"
   },
   "permission": {
     "scope.userLocation": {

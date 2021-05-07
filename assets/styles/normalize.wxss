@@ -1,7 +1,7 @@
 page {
   -webkit-overflow-scrolling: touch;
   height: 100%;
-  background: #FFFFFF;
+  background: #F0F0F0;
   width: 100%;
   font-size: 28rpx;
   font-family: PingFang-SC-Medium;

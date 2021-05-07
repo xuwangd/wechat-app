@@ -1,4 +1,15 @@
 /* pages/mall/mall.wxss */
+page{
+  background-color: #fff;
+}
+/*  */
+.searchbar{
+  background-color:#f28e26;
+}
+.searchbar .weui-search-bar__cancel-btn{
+  color:#fff;
+}
+/*  */
 .swiper{
   height:260rpx;
 }

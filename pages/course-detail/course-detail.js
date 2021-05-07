@@ -1,43 +1,23 @@
-// pages/open-AD/open-AD.js
-import router from '../../router/index'
-let timmer = null
-const countDown = 10
+// pages/course-detail/course-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    countDown:countDown
+    bannerList: ['../../assets/temp/index-banner.png','../../assets/temp/index-banner.png'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: false,
+    interval: 2000,
+    duration: 500,
   },
-  // 跳转
-  handlerJump(){
-    clearInterval(timmer)
-    router.redirectTo({
-      path:'/pages/index/index'
-    })
-  },
-  // 广告 倒计时
-  // handlerCountDown(){
-    
-  // },
-  // 初始化
-  initData(){
-    timmer = setInterval(()=>{
-      console.log('??')
-      this.setData({
-        countDown:this.data.countDown - 1
-      })
-      if(this.data.countDown <= 0){
-        this.handlerJump()
-      }
-    },1000)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.initData()
+
   },
 
   /**
@@ -51,7 +31,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**

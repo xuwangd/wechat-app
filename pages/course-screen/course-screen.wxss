@@ -1,0 +1,85 @@
+/* pages/course-screen/course-screen.wxss */
+page{
+  background-color: #fff;
+}
+/*  */
+.container{
+  margin:30rpx 20rpx;
+}
+.row{}
+.row .col{
+  margin-bottom: 30rpx;
+}
+.row .col .label{
+  float:left;
+  width:164rpx;
+  font-weight:bold;
+  font-size:26rpx;
+  color:#000;
+  padding-top: 15rpx;
+}
+.row .col .div{
+  overflow:hidden;
+}
+.row .col .div .inp{
+  width:100%;
+  height:50rpx;
+  border-bottom: 1rpx solid #C8C8C8;
+  color:#000;
+  font-size:26rpx;
+  padding-left: 20rpx;
+}
+.row .col .div .picker{
+  width:100%;
+  border-bottom: 1rpx solid #C8C8C8;
+  height:50rpx;
+  padding-left: 20rpx;
+  line-height: 50rpx;
+}
+.row .col .div .picker .span{
+  display: inline-block;
+  text-align:right;
+  width:120rpx;
+  font-weight:bold;
+  font-size:26rpx;
+  color:#000;
+}
+.row .col .div .radio-group{
+  margin-right: -44rpx;
+}
+.row .col .div .radio-group .radio{
+  height:60rpx;
+  width:150rpx;
+  float: left;
+  line-height: 58rpx;
+  text-align:center;
+  box-sizing: border-box;
+  border:1rpx solid #E4E4E4;
+  border-radius:15rpx;
+  font-size:24rpx;
+  color:#000;
+  font-weight:bold;
+  margin-right: 44rpx;
+  margin-bottom: 20rpx;
+}
+.row .col .div .radio-group .radio.active{
+  background-image:linear-gradient(to left,#f28e26,#fd644f);
+  border-color:#f28e26;
+  color:#fff;
+}
+/*  */
+.footer{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+.footer .btn{}
+.footer .btn .span{
+  height:90rpx;
+  font-size:34rpx;
+  color:#fff;
+  background-image:linear-gradient(to left,#f28e26,#fd644f);
+  font-weight:bold;
+  border-radius:15rpx;
+  text-align:center;
+  line-height: 90rpx;
+}

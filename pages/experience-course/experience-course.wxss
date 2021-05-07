@@ -1,4 +1,7 @@
 /* pages/experience-course/experience-course.wxss */
+page{
+  background-color: #fff;
+}
 /*  */
 .app-container{
   display:flex;

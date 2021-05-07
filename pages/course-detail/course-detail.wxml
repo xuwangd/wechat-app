@@ -1,0 +1,74 @@
+<!-- pages/course-detail/course-detail.wxml -->
+<view class="container">
+  <!--  -->
+  <swiper class="swiper" indicator-dots="{{ indicatorDots }}" indicator-active-color="#F9962E" indicator-color="#C8C8C8" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}">
+    <block wx:for="{{ bannerList }}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <view>
+          <image class="banner" src="{{ item }}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--  -->
+  <view class="row">
+    <view class="col">
+      <view class="section">
+        <view class="course-name">某某课程</view>
+        <view class="p">简单易懂 循序渐进</view>
+        <view class="course-introduction">
+          <view class="left">线上+线下80期课程</view>
+          <view class="right">
+            <view class="price">1000元</view>
+            <view class="people-buy">购买人数：100人</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="col">
+      <view class="section">
+        <view class="h2">课程简介</view>
+        <view class="desc">
+          <view class="p">课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述课程描述</view>
+        </view>
+      </view>
+    </view>
+    <view class="col">
+      <view class="section">
+        <view class="h2">课程目录</view>
+        <view class="cell">
+          <view class="cells">
+            <view class="text">第一章节</view>
+          </view>
+          <view class="cells">
+            <view class="text">第一章节</view>
+          </view>
+          <view class="cells">
+            <view class="icon">
+              <image class="img" src="../../assets/images/zk-C8C8C8.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="col">
+      <view class="section">
+        <view class="h2">课程详情</view>
+        <view class="div">
+          <image class="img" src="../../assets/temp/index-banner.png"></image>
+          <image class="img" src="../../assets/temp/index-banner.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="footer">
+    <view class="help">
+      <image class="service" src="../../assets/temp/index-banner.png"></image>
+      <image class="collect" src="../../assets/temp/index-banner.png"></image>
+    </view>
+    <view class="btn">
+      <view class="span">购买课程</view>
+    </view>
+  </view>
+</view>

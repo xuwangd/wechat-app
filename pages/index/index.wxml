@@ -1,8 +1,7 @@
 <!-- index.wxml -->
 <view class="app-container">
-  {{ queryParams.courseName }}
   <!--  -->
-  <mp-searchbar placeholder="课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput"></mp-searchbar>
+  <mp-searchbar ext-class="searchbar" placeholder="搜索课程" value="{{ queryParams.courseName }}" bindclear="handlerClear" bindinput="handlerInput"></mp-searchbar>
   <!--  -->
   <swiper class="swiper" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}">
     <block wx:for="{{ bannerList }}" wx:key="*this">
@@ -19,7 +18,7 @@
       <view class="row">
         <view class="col" wx:for="{{ navList }}" wx:key="*this">
           <image class="icon" src="{{ item.icon }}"></image>
-          <view class="txt xft-multi-ellipsis">{{ item.text }}</view>
+          <view class="txt">{{ item.text }}</view>
         </view>
       </view>
     </view>

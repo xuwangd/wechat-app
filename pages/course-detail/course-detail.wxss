@@ -1,0 +1,142 @@
+/* pages/course-detail/course-detail.wxss */
+/*  */
+.swiper{
+  height:400rpx;
+}
+.swiper .swiper-item{
+  
+}
+.swiper .swiper-item .banner{
+  width:100%;
+  height:400rpx;
+  object-fit: cover;
+}
+/*  */
+.row{
+  margin:30rpx 20rpx 90rpx;
+}
+.row .col{
+  margin-bottom:10rpx;
+}
+.section{
+  padding:20rpx 40rpx;
+  border-radius:30rpx;
+  background-color: #fff;
+}
+.section .h2{
+  font-size:26rpx;
+  color:#000;
+}
+.section .desc{
+  margin-top:10rpx;
+}
+.section .desc .p{
+  font-size:24rpx;
+  color:#7A7A7A;
+}
+.section .course-name{
+  font-weight:bold;
+  font-size:36rpx;
+  color:#000;
+}
+.section .p{
+  margin-bottom: 8rpx;
+  font-size:22rpx;
+  color:#8D8D8D;
+}
+.section .div{
+  margin-top: 8rpx;
+}
+.section .div .img{
+  display:block;
+  margin-bottom:10rpx;
+}
+.section .cell{
+  margin-top:20rpx;
+}
+.section .cell .cells{
+  height:58rpx;
+  border:1rpx solid #C8C8C8;
+  border-radius:30rpx;
+}
+.section .cell .cells .text{
+  line-height: 58rpx;
+  font-size:24rpx;
+  color:#000;
+  font-weight:bold;
+  text-align:center;
+}
+.section .cell .cells .icon{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.section .cell .cells .icon .img{
+  width:56rpx;
+  height:40rpx;
+  object-fit:cover;
+}
+.section .course-introduction{
+  display:flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+}
+.section .course-introduction .left{
+  font-size:24rpx;
+  color:#8D8D8D;
+}
+.section .course-introduction .right{
+  text-align:right;
+  color:#FD0100;
+  font-weight:bold;
+}
+.section .course-introduction .right .price{
+  font-size:30rpx;
+}
+.section .course-introduction .right .people-buy{
+  margin-top: 10rpx;
+  font-size:22rpx;
+}
+/*  */
+.footer{
+  position:fixed;
+  left: 0;
+  bottom:0;
+  width:100%;
+  height:80rpx;
+  padding-top:10rpx;
+  padding-left:60rpx;
+  padding-right:60rpx;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+}
+.footer .help{
+  float:left;
+  font-size:0;
+}
+.footer .help image{
+  display:inline-block;
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  object-fit:cover;
+  margin-right:30rpx;
+}
+.footer .help .service{}
+.footer .help .collect{}
+.footer .btn{
+  float:right;
+}
+.footer .btn .span{
+  width:440rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  font-size:28rpx;
+  color:#fff;
+  background-color:#FE0000;
+  font-weight:bold;
+  text-align:center;
+  border-radius:30rpx;
+}
